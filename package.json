@@ -1,0 +1,48 @@
+{
+  "name": "@popomore/cf-tools",
+  "version": "1.0.1",
+  "description": "Cloudflare Tools",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "tsc",
+    "prepublishOnly": "npm run build",
+    "start": "node dist/index.js",
+    "dev": "ts-node src/index.ts",
+    "test": "jest",
+    "coverage": "jest --coverage"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/popomore/cf-tools.git"
+  },
+  "keywords": [],
+  "author": "popomore",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/popomore/cf-tools/issues"
+  },
+  "homepage": "https://github.com/popomore/cf-tools#readme",
+  "devDependencies": {
+    "@types/node": "^22.15.17",
+    "eslint": "^9.26.0",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.8.3",
+    "jest": "^29.0.0",
+    "ts-jest": "^29.0.0",
+    "@types/jest": "^29.0.0"
+  },
+  "jest": {
+    "preset": "ts-jest",
+    "testEnvironment": "node",
+    "moduleFileExtensions": ["ts", "js"],
+    "testMatch": ["**/test/*.test.ts"]
+  },
+  "publishConfig": {
+    "access": "public",
+    "registry": "https://registry.npmjs.org"
+  }
+}
