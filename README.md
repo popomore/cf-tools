@@ -16,25 +16,27 @@ import { getLocationHint, CountryAlpha2 } from '@popomore/cf-tools';
 const region = getLocationHint(CountryAlpha2.US); // e.g. 'wnam'
 ```
 
-## Installation
+## Develop
+
+### Installation
 
 ```bash
 npm install
 ```
 
-## Build
+### Build
 
 ```bash
 npm run build
 ```
 
-## Test
+### Test
 
 ```bash
 npm test
 ```
 
-## Coverage
+### Coverage
 
 ```bash
 npm run coverage
